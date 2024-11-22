@@ -82,15 +82,16 @@ const Navbar = () => {
           ></button>
         </div>
         <div className="offcanvas-body">
-          <ul 
-          style={{ 
-            display:"flex",
-            "flexDirection":"column",
-            "alignItems":"center",
-            "justifyContent":"center",
-            "height":"100vh"
-           }}
-          className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100vh",
+            }}
+            className="navbar-nav ms-auto mb-2 mb-lg-0"
+          >
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#">
                 Home
