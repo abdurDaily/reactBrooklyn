@@ -1,0 +1,108 @@
+#banner {
+  position: relative;
+  z-index: 1;
+}
+#banner .bannerContais {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+#banner .bannerContais .button a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-white);
+  padding: 12px 24px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+}
+#banner .bannerContais .head {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 117%;
+  color: var(--gray-900);
+}
+#banner .bannerContais p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--gray-600);
+}
+#banner .bannerContais a {
+  background: var(--primary-500);
+}
+
+#banner .experience .experience_box {
+  padding: 17px 0;
+  background: rgba(237, 216, 255, 0.5);
+  width: calc(33.33% - 10px);
+  margin: 5px;
+}
+
+#banner .experience {
+  text-align: center;
+  margin-top: 50px;
+}
+#banner .experience span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-500);
+}
+#banner .experience h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--gray-700);
+}
+#banner .droshadow {
+  position: relative;
+}
+#banner .droshadow::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0;
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 30px 30px 300px 400px #db4df122;
+  /* background: linear-gradient(#db4df154,#C4F5E9); */
+}
+#banner .droshadow::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 30px 30px 300px 400px #c4f5e957;
+  /* background: linear-gradient(#db4df154,#C4F5E9); */
+}
+#banner .counterHeading span{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--gray-700);
+}
+@media (max-width: 991px) {
+  #banner .droshadow::before {
+    display: none;
+  }
+  #banner .droshadow::after {
+    display: none;
+  }
+  #banner .experience .experience_box {
+    width: 100%;
+    margin: 5px;
+  }
+}
