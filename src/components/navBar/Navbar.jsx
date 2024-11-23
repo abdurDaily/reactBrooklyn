@@ -1,6 +1,9 @@
 import React from "react";
 import "../../App.css";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
+import routes from "../routes/Route";
+
 
 const Navbar = () => {
   return (
@@ -23,17 +26,24 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="#">
-                  Home
+                Home
                 </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
+              </li> */}
+
+              {
+                routes.map((el,index) => {
+                  return (
+                    <li key={index} className="nav-item">
+                      <Link to={el.path} className="nav-link">{el.element}</Link>
+                    </li>
+                  )
+                })
+              }
+
+              
+              {/* <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="#">
                   Process
                 </a>
@@ -53,11 +63,14 @@ const Navbar = () => {
                   Service
                 </a>
               </li>
+               */}  
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="#">
                   Contact
                 </a>
               </li>
+
+              
             </ul>
           </div>
         </div>
