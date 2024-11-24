@@ -1,0 +1,11 @@
+@media (min-width: 991.98px) { 
+    #work .col-lg-6:first-child{
+        margin-top: -40px;
+    }
+    #work .col-lg-6:nth-child(3){
+        margin-top: -20px;
+    }
+    #work .col-lg-6:nth-child(4){
+        margin-top: 20px;
+    }
+}

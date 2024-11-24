@@ -74,7 +74,6 @@
   border-radius: 50%;
   z-index: -1;
   box-shadow: 30px 30px 300px 400px #db4df122;
-  /* background: linear-gradient(#db4df154,#C4F5E9); */
 }
 #banner .droshadow::before {
   content: "";
@@ -86,7 +85,7 @@
   box-shadow: 30px 30px 300px 400px #c4f5e957;
   /* background: linear-gradient(#db4df154,#C4F5E9); */
 }
-#banner .counterHeading span{
+#banner .counterHeading span {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 32px;

@@ -9,7 +9,8 @@ import {
 } from "react-router-dom";
 import About from './components/about/About.jsx'
 import Banner from './components/banner/Banner.jsx'
-import Test from './components/about/test.jsx'
+import AboutContaint from './components/about/AboutContaint.jsx'
+
 
 
 
@@ -22,16 +23,14 @@ const router = createBrowserRouter([
         path: "/banner",
         element: <Banner />
       },
+      
     ]
   },
   {
     path: "/about",
     element: <About />,
     children:[
-      {
-        path: "/about/banner",
-        element: <Test />
-      }
+      
     ]
     
   }

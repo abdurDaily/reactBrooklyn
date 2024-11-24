@@ -3,6 +3,7 @@ import "./Banner.css";
 import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS styles
 import Counter from "./Counter";
+import AboutContaint from "../about/AboutContaint";
 
 const Banner = () => {
   // Initialize AOS
@@ -69,6 +70,8 @@ const Banner = () => {
           </div>
         </div>
       </section>
+
+
     </div>
   );
 };

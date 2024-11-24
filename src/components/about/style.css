@@ -1,0 +1,14 @@
+#about h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 132%;
+  color: var(--gray-900);
+}
+#about p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--gray-600);
+}
